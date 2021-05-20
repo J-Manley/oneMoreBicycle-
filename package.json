@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss /src/main.css -o /dist/main.css",
-    "prod": "NODE_ENV=production postcss /src/main.css -o /dist/main.css"
+    "dev": "postcss ./src/main.css -o ./dist/main.css",
+    "prod": "NODE_ENV=production postcss ./src/main.css -o ./dist/main.css"
   },
   "keywords": [],
   "author": "",
