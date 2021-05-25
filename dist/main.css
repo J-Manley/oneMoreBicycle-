@@ -609,7 +609,7 @@ video {
 }
 
 .bg-hero-image {
-  background-image: url('/img/hero-image.jpg');
+  background-image: url('../dist/img/hero-image.jpg');
 }
 
 .bg-opacity-75 {
