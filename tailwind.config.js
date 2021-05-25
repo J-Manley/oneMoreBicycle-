@@ -36,6 +36,10 @@ module.exports = {
       backgroundImage: (theme) => ({
         "hero-image": "url('/img/hero-image.jpg')",
       }),
+      spacing: {
+        112: "28rem",
+        128: "32rem",
+      },
     },
   },
   variants: {
