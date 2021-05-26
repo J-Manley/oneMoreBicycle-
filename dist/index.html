@@ -17,14 +17,14 @@
 <body class="relative bg-trueGrey-400 font-notoSansJP min-h-screen" id="home">
   <!-- Navbar -->
   <nav class="bg-trueGrey-900 text-trueGrey-50 px-10 py-3 sticky top-0 z-50 hidden lg:block">
-    <div class=" hidden lg:flex flex-wrap justify-between items-center ml-4">
+    <div class=" hidden lg:flex flex-wrap justify-between items-center">
       <div class="w-20">
         <a href="#home">
           <img src="./img/logo-company.webp" alt="One More Bicycle Company Logo" class="w-full">
         </a>
       </div>
       <!-- Navbar Links -->
-      <ul class=" hidden md:flex md:space-x-5 md:text-xl">
+      <ul class=" hidden md:flex md:space-x-5 md:text-xl lg:ml-6">
         <li><a href="#" class="transition transform duration-300 ease hover:text-green-500">Shop</a></li>
         <li><a href="#" class="transition transform duration-300 ease hover:text-green-500">Services</a></li>
         <li><a href="#" class="transition transform duration-300 ease hover:text-green-500">About</a></li>
@@ -79,56 +79,63 @@
   </div>
   <!-- End Mobile Navbar -->
   <!-- Hero Section -->
-  <section class="flex justify-center pt-44 pb-96 bg-hero-image bg-cover min-h-screen relative">
+  <section class="flex justify-center pt-44 lg:pt-72 bg-hero-image bg-cover min-h-screen relative">
     <div class="absolute inset-0 h-full bg-black bg-opacity-75"></div>
-    <div class="max-w-xs flex flex-col items-center z-40">
-      <h1 class="text-green-500 text-2xl mb-2">Nantwich’s hardest working bike shop!</h1>
-      <p class="text-trueGrey-200 mb-10">A hub for our community. Our workshop is the heart of our
+    <div class="max-w-xs lg:max-w-none flex flex-col items-center z-40 lg:text-center">
+      <h1 class="text-green-500 text-2xl lg:text-5xl mb-2 lg:mb-5">Nantwich’s hardest working bike shop!</h1>
+      <p class="text-trueGrey-200 mb-10 lg:text-2xl lg:max-w-2xl">A hub for our community. Our workshop is the heart of
+        our
         business, call or visit us to discuss servicing and repairs.</p>
       <a href="/contact.html"
-        class="bg-green-500 px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wide font-semibold text-sm w-1/2 text-center mr-4">Contact
+        class="bg-green-500 px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wide font-semibold text-sm lg:text-base w-1/2 lg:w-1/4 text-center mr-4 lg:mr-10 lg:hover:bg-green-600 transition duration-300 ease">Contact
         Us</a>
     </div>
   </section>
   <!-- End Hero Section -->
   <!-- Testimonial Section -->
-  <section class="pt-8">
-    <h2 class="text-center text-xl mb-2">See what our customers say:</h2>
-    <div class="grid grid-cols-1 grid-rows-4 gap-y-4 place-items-center p-6">
+  <section class="pt-10 lg:pt-16 lg:flex flex-col justify-center items-center mb-6 lg:mb-28">
+    <h2 class="text-center text-xl lg:text-2xl mb-4 lg:mb-16">See what our customers say:</h2>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-3 gap-y-4 lg:gap-y-12 lg:gap-x-8 place-items-center px-6">
       <div
-        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500">
-        <p class="mb-3">" Fantastic and friendly service. Needed fast service so I can ride this Sunday and Mark fixed
+        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-5">" Fantastic and friendly service. Needed fast service so I can ride this Sunday and Mark
+          fixed
           me up there and then and also gave a few pointers to help me in the future. Highly recommended and really
           happy we have a local bike specialist. "</p>
         <p class="text-sm font-semibold">Richard Booth</p>
       </div>
       <div
-        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500">
-        <p class="mb-3">" Fantastic, relaxed environment! Great place to browse at bikes, bring your own in or stop
+        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-5">" Fantastic, relaxed environment! Great place to browse at bikes, bring your own
+          in or stop
           off
           on your ride for a sit down, coffee and a chat! With someone who knows exactly what they are doing! Fully
           recommended! "</p>
         <p class="text-sm font-semibold">Liz Tidwell</p>
       </div>
       <div
-        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500">
-        <p class="mb-3">" Can't recommend One More Bicycle highly enough, absolutely quality service from Mark. My
+        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-5">" Can't recommend One More Bicycle highly enough, absolutely quality service from Mark.
+          My
           first
           bike since being a kid, guided me through what would be best for me, set me up correctly regards fit,
           absolutely top notch pre-delivery service = one very satisfied customer!! "</p>
         <p class="text-sm font-semibold">Philip Tonks</p>
       </div>
       <div
-        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500">
-        <p class="mb-3">" I was doing LEJOG solo and unsupported and needed to keep on top of bike maintenance. Mark
+        class="bg-trueGrey-400 flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-5">" I was doing LEJOG solo and unsupported and needed to keep on top of bike maintenance.
+          Mark
           offered to degrease my chain there and then despite being busy. I was up against it time-wise and he helped
           no
           end. Friendly and professional service. "</p>
         <p class="text-sm font-semibold">Dan Townend</p>
       </div>
       <div
-        class="bg-trueGrey-400 lg:flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 hidden">
-        <p class="mb-3">" Fantastic service and doesn’t charge the world like the ‘bigger bike shops’, Mark was so
+        class="bg-trueGrey-400 lg:flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 hidden lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-4">" Fantastic service and doesn’t charge the world like the ‘bigger bike shops’, Mark was
+          so
           helpful, he fitted a chain and cassette on my mountain bike but the 1x11 I’d just fitted wasn’t playing
           ball,
           he made it work in the end and wouldn’t take no for an answer as I’m going to Llandegla tomorrow and he said
@@ -136,8 +143,9 @@
         <p class="text-sm font-semibold">Paul Connell</p>
       </div>
       <div
-        class="bg-trueGrey-400 lg:flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 hidden">
-        <p class="mb-3">" Popped in to drop a set of TT wheels off for truing, and ended up staying for a coffee and
+        class="bg-trueGrey-400 lg:flex flex-col justify-center items-center p-4 rounded-lg shadow-lg divide-y divide-green-500 hidden lg:max-w-lg lg:h-60">
+        <p class="mb-3 lg:mb-5">" Popped in to drop a set of TT wheels off for truing, and ended up staying for a coffee
+          and
           chat whilst they were done. Brilliant job done and very friendly and welcoming place. Thanks Mark. Well
           recommended. "</p>
         <p class="text-sm font-semibold">John Backhouse</p>
@@ -147,21 +155,25 @@
   </section>
   <!-- End Testimonial -->
   <!-- Brand Section -->
-  <section class=" grid grid-cols-2 grid-rows-4 place-items-center p-6">
-    <div class="w-36"><img src="./img/logo-cinelli.webp" alt="" class="w-full h-full filter brightness-0"></div>
-    <div class="w-36"><img src="./img/logo-salsa.webp" alt="" class="w-full h-full"></div>
-    <div class="w-36"><img src="./img/logo-stooge.webp" alt="" class="w-full h-full filter brightness-0"></div>
-    <div class="w-40"><img src="./img/logo-shimano.webp" alt="" class="w-full h-full"></div>
-    <div class="w-36"><img src="./img/logo-sram.webp" alt="" class="w-full h-full"></div>
-    <div class="w-28"><img src="./img/logo-kask.webp" alt="" class="w-full h-full"></div>
-    <div class="w-36"><img src="./img/logo-schwalbe.webp" alt="" class="w-full h-full"></div>
-    <div class="w-36"><img src="./img/logo-vittoria.webp" alt="" class="w-full h-full filter brightness-0"></div>
-    <div class="w-36"><img src="./img/logo-chapeau.webp" alt="" class="w-full h-full filter brightness-0"></div>
-    <div class="w-36"><img src="./img/logo-fenwicks.webp" alt="" class="w-full h-full filter brightness-0"></div>
+  <section class=" grid grid-cols-2 lg:grid-cols-3 grid-rows-4 place-items-center p-6 mb-6 lg:max-w-5xl lg:mx-auto">
+    <div class="w-36 lg:w-60"><img src="./img/logo-cinelli.webp" alt="" class="w-full h-full filter brightness-0"></div>
+    <div class="w-36 lg:w-60"><img src="./img/logo-salsa.webp" alt="" class="w-full h-full"></div>
+    <div class="w-40 lg:w-64"><img src="./img/logo-stooge.webp" alt="" class="w-full h-full filter brightness-0"></div>
+    <div class="w-40 lg:w-64"><img src="./img/logo-shimano.webp" alt="" class="w-full h-full"></div>
+    <div class="w-36 lg:w-60"><img src="./img/logo-sram.webp" alt="" class="w-full h-full"></div>
+    <div class="w-28 lg:w-48"><img src="./img/logo-kask.webp" alt="" class="w-full h-full"></div>
+    <div class="w-36 lg:w-60"><img src="./img/logo-schwalbe.webp" alt="" class="w-full h-full"></div>
+    <div class="w-36 lg:w-60"><img src="./img/logo-vittoria.webp" alt="" class="w-full h-full filter brightness-0">
+    </div>
+    <div class="w-36 lg:w-56"><img src="./img/logo-fenwicks.webp" alt="" class="w-full h-full filter brightness-0">
+    </div>
+    <div class="w-36 lg:w-56"><img src="./img/logo-chapeau.webp" alt=""
+        class="w-full h-full filter brightness-0 lg:hidden">
+    </div>
   </section>
   <!-- End Brand -->
   <!-- Footer Section -->
-  <section class="bg-trueGrey-800 text-trueGrey-50 px-5 py-3 flex flex-wrap justify-center whitespace-pre">
+  <section class="bg-trueGrey-900 text-trueGrey-50 px-5 py-3 lg:py-8 flex flex-wrap justify-center whitespace-pre">
     <p>Copyright &copy; 2021 One More Bicycle. </p>
     <p>All rights reserved.</p>
   </section>

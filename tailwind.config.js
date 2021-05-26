@@ -39,7 +39,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: { backgroundColor: ["active"] },
+    extend: {
+      backgroundColor: ["active"],
+    },
   },
   plugins: [require("tailwindcss-debug-screens")],
 };
