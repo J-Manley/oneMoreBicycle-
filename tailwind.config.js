@@ -34,8 +34,8 @@ module.exports = {
         notoSansJP: ["'Noto Sans JP'", "helvetica", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "hero-image-home": "url('../dist/img/hero-image.jpg')",
-        "hero-image-about": "url('../dist/img/')",
+        "hero-image-home": "url('.dist/img/hero-image-home.jpg')",
+        "hero-image-about": "url('.dist/img/hero-image-about.webp')",
       }),
     },
   },
