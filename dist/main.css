@@ -609,11 +609,11 @@ video {
 }
 
 .bg-hero-image-home {
-  background-image: url('.dist/img/hero-image-home.jpg');
+  background-image: url('/.dist/img/hero-image-home.jpg');
 }
 
 .bg-hero-image-about {
-  background-image: url('.dist/img/hero-image-about.webp');
+  background-image: url('/.dist/img/hero-image-about.webp');
 }
 
 .bg-opacity-75 {
