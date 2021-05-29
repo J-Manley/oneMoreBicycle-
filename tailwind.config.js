@@ -35,7 +35,6 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "hero-image-home": "url('./img/hero-image-home.jpg')",
-        "hero-image-about": "url('./img/hero-image-about.webp')",
       }),
     },
   },

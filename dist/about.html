@@ -55,39 +55,55 @@
         </a>
       </div>
       <!-- Mobile Menu Btn -->
-      <button class="mobile-menu-btn text-trueGrey-200 p-4 text-4xl focus:outline-none focus:bg-trueGrey-400 md:hidden">
+      <button class="mobile-menu-btn text-trueGrey-200 p-4 text-4xl focus:outline-none focus:bg-trueGrey-400">
         <i class="fas fa-bars"></i>
       </button>
     </div>
   </nav>
   <!-- Slide-in Menu -->
   <div
-    class="mobile-menu bg-green-500 text-trueGrey-200 w-full space-y-6 py-7 px-2 fixed z-50 inset-0 transform translate-x-full transition duration-200 ease-in-out md:hidden">
+    class="mobile-menu bg-green-500 text-trueGrey-200 w-full space-y-6 py-7 px-2 fixed z-50 inset-0 transform translate-x-full transition duration-200 ease-in-out">
     <ul class="flex flex-col justify-center items-center h-full space-y-5 text-3xl">
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./shop.html">Shop</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
     <button
       class="mobile-menu-close absolute top-0 right-0 cursor-pointer text-2xl p-6 pt-0 mr-3 focus:outline-none focus:bg-trueGrey-400"><i
         class="fa fa-times fa-2x"></i></button>
   </div>
   <!-- End Mobile Navbar -->
-  <!-- Hero Section -->
-  <section class="flex justify-center pt-44 lg:pt-72 bg-hero-image-about bg-contain bg-no-repeat min-h-screen relative">
-    <div class="absolute inset-0 h-full bg-black bg-opacity-75"></div>
-    <p>'One more bicycle' was borne out of a passion and love for cycling. Our shared vision has created a space that we
-      hope local cyclists and the community at large will be proud of. Of course we have a first class workshop facility
-      and a store filled with beautiful bikes, but the aim has always been to be much more than just another shop. It's
-      a
-      hub, a place to meet friends, enjoy a mid ride coffee break in our 'lounge' or just pop in for a chat. Our desire
-      is
-      to make every person that visits us feel welcome and thoroughly appreciated, backed up with careful and considered
-      advice based upon a lifetime of knowledge and experience. A simple principle, but one which is at the heart of
-      everything we do. We look forward to meeting you.</p>
+  <section class="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center mb-16 lg:mb-28">
+    <div class="relative mb-8 md:mb-12 lg:mb-16 w-full lg:w-auto lg:order-2 lg:mt-20 lg:shadow-lg"><img
+        src="./img/hero-image-about.webp" alt="Image of One More Bicycle shop front" loading="lazy"
+        class="w-full rounded">
+      <div class="absolute inset-0 h-full bg-black bg-opacity-10 rounded"></div>
+    </div>
+    <div class="flex flex-col items-center">
+      <h1 class="text-2xl lg:text-5xl text-trueGrey-900 mb-6 lg:mb-5">About Us</h1>
+      <p class="max-w-xs md:max-w-md lg:max-w-2xl lg:text-lg ml-4 lg:ml-12">'One more bicycle' was borne out of a
+        passion and
+        love for cycling. Our shared vision has created a space that we hope local cyclists and the community at large
+        will be proud of. Of course we have a first class workshop facility and a store filled with beautiful bikes, but
+        the aim has always been to be much more than just another shop. It's a hub, a place to meet friends, enjoy a mid
+        ride coffee break in our 'lounge' or just pop in for a chat.</p>
+      <br>
+      <p class="max-w-xs md:max-w-md lg:max-w-2xl lg:text-lg ml-4 lg:ml-12">Our desire is to make every person that
+        visits us
+        feel welcome and thoroughly appreciated, backed up with
+        careful and considered advice based upon a lifetime of knowledge and experience. A simple principle, but one
+        which is at the heart of everything we do. We look forward to meeting you.</p>
+    </div>
   </section>
-  <!-- End Hero -->
+  <!-- Footer Section -->
+  <section class="bg-trueGrey-900 text-trueGrey-50 px-5 py-3 lg:py-8 flex flex-wrap justify-center whitespace-pre">
+    <p>Copyright &copy; 2021 <span class="text-trueGrey-400">One </span>More <span
+        class="text-green-500">Bicycle</span>. </p>
+    <p>All rights reserved.</p>
+  </section>
+  <!-- End Footer -->
 
   <script src="main.js"></script>
 </body>
