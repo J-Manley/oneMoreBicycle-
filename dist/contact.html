@@ -84,20 +84,29 @@
         sit amet consectetur adipisicing elit. Corporis possimus sequi praesentium eaque, atque qui laudantium
         necessitatibus dignissimos iusto quidem.</p>
     </div>
-    <div class="flex flex-1">
-      <div class="lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
+    <div class="flex">
+      <div class="flex-1 lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
           class="w-full h-full object-contain">
       </div>
       <div
-        class="px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-36 bg-trueGrey-200 text-trueGrey-900">
-        <div class="flex flex-col justify-between">
-          <div class="bg-green-500">
-            <h2 class="text-4xl lg:text-5xl font-semibold">Get In Touch!</h2>
-            <div class="text-trueGrey-600 mt-8">
-              Hate forms? Send us an <span class="underline">email</span> instead.
-            </div>
-          </div>
-          <div class="mt-8 text-center">
+        class="px-8 grid gap-8 auto-rows-min col-start-1 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 pt-16 pb-96 bg-trueGrey-200 text-trueGrey-900">
+        <div class="flex flex-col col-span-2 p-4 h-56 bg-green-500 text-trueGrey-700 rounded-md">
+          <h2 class="lg:text-xl font-semibold text-center">Contact Information</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</p>
+          <div class="md:flex md:space-x-3 md:text-2xl">
+            <a href="https://facebook.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+              class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500" alt="facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+              class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500"
+              alt="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+              class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500" alt="twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="mailto:mark@onemorebicycle.co.uk"
+              class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500" alt="email"><i
+                class="far fa-envelope fa-1x"></i></a>
           </div>
         </div>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
