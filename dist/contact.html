@@ -76,22 +76,22 @@
         class="fa fa-times fa-2x"></i></button>
   </div>
   <!-- End Mobile Navbar -->
-  <section class="flex flex-col justify-center lg:justify-evenly items-center mb-16 lg:mb-28">
-    <div class="flex flex-col items-center pt-44 md:pt-60 lg:pt-40 mb-24">
-      <h1 class="font-semibold text-2xl md:text-4xl lg:text-5xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch!</h1>
+  <section class="flex flex-col justify-center lg:justify-evenly items-center">
+    <div class="flex flex-col items-center pt-44 md:pt-60 lg:pt-36 mb-48">
+      <h1 class="font-semibold text-2xl md:text-4xl lg:text-5xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch</h1>
       <div class="block h-0.5 w-12 lg:w-24 mx-auto bg-green-500 mb-6 lg:mb-12"></div>
-      <p class="max-w-xs md:max-w-md lg:max-w-2xl md:text-xl ml-4 md:ml-8 lg:ml-12">Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Corporis possimus sequi praesentium eaque, atque qui laudantium
+      <p class="text-trueGrey-900 max-w-xs md:max-w-md lg:max-w-2xl md:text-xl ml-4 md:ml-8 lg:ml-12">Lorem ipsum dolor,
+        sit amet consectetur adipisicing elit. Corporis possimus sequi praesentium eaque, atque qui laudantium
         necessitatibus dignissimos iusto quidem.</p>
     </div>
     <div class="flex flex-1">
-      <div class="lg:order-2 h-full"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
-          class="w-full h-full">
+      <div class="lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
+          class="w-full h-full object-contain">
       </div>
       <div
-        class="max-w-screen-lg px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-36 mx-auto bg-trueGrey-200 text-trueGrey-900">
+        class="px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-36 bg-trueGrey-200 text-trueGrey-900">
         <div class="flex flex-col justify-between">
-          <div>
+          <div class="bg-green-500">
             <h2 class="text-4xl lg:text-5xl font-semibold">Get In Touch!</h2>
             <div class="text-trueGrey-600 mt-8">
               Hate forms? Send us an <span class="underline">email</span> instead.
@@ -100,30 +100,38 @@
           <div class="mt-8 text-center">
           </div>
         </div>
-        <div class="">
-          <div>
-            <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="">
-          </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="mb-2">
+            <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">First name</label>
+            <input type="text" name="name"
+              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text">
           </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea
-              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+          <div class="mb-2">
+            <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold">Last name</label>
+            <input type="text" name="name"
+              class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text">
           </div>
-          <div class="mt-8">
-            <button
-              class="uppercase text-sm font-bold tracking-wide bg-green-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-              Send Message
-            </button>
+          <div class="mb-2">
+            <label for="email" class="inline-block text-sm text-trueGrey-600 font-bold">Email</label>
+            <input type="email" name="email"
+              class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text">
           </div>
-        </div>
+          <div class="mb-8">
+            <label for="message" class="inline-block text-sm text-trueGrey-600 font-bold">Message</label>
+            <textarea name="message"
+              class="w-full h-32 bg-gray-300 text-trueGrey-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+          </div>
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit"
+            class="uppercase text-sm font-bold tracking-wide bg-green-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </form>
       </div>
+    </div>
     </div>
   </section>
   <!-- Footer Section -->
