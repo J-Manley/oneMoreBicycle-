@@ -15,10 +15,10 @@
 <body class="bg-trueGrey-300 text-gray-100">
   <!-- Navbar -->
   <nav class="bg-trueGrey-900 text-trueGrey-50 px-10 py-3 sticky top-0 z-50 hidden lg:block">
-    <div class=" hidden lg:flex flex-wrap justify-between items-center">
+    <div class="hidden lg:flex flex-wrap justify-between items-center">
       <div class="w-20">
         <a href="./index.html">
-          <img src="./img/logo-company.webp" alt="One More Bicycle Company Logo" class="w-full">
+          <img src="./img/logo-company.webp" alt="One More Bicycle Company Logo" class="h-full w-full">
         </a>
       </div>
       <!-- Navbar Links -->
@@ -85,65 +85,94 @@
         necessitatibus dignissimos iusto quidem.</p>
     </div>
     <div class="flex">
-      <div class="flex-1 lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
+      <div class="lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front" loading="lazy"
           class="w-full h-full object-contain">
       </div>
       <div
-        class="px-8 grid gap-8 auto-rows-min grid-cols-1 md:px-12 lg:px-44 pt-16 pb-96 bg-trueGrey-200 text-trueGrey-900">
-        <div class="flex flex-col col-span-2 p-4 h-56 bg-green-500 text-trueGrey-700 rounded-md">
-          <h2 class="lg:text-xl font-semibold text-center">Contact Information</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quam!</p>
-          <div class="md:flex md:space-x-3 md:text-2xl">
-            <a href="https://facebook.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-              class="transition transform duration-300 ease hover:-translate-y-1" alt="facebook"><i
-                class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-              class="transition transform duration-300 ease hover:-translate-y-1" alt="instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-              class="transition transform duration-300 ease hover:-translate-y-1" alt="twitter"><i
-                class="fab fa-twitter"></i></a>
-            <a href="mailto:mark@onemorebicycle.co.uk"
-              class="transition transform duration-300 ease hover:-translate-y-1" alt="email"><i
-                class="far fa-envelope fa-1x"></i></a>
+        class="px-8 grid gap-8 auto-rows-min grid-cols-1 md:px-12 lg:px-32 pt-20 pb-96 bg-trueGrey-200 text-trueGrey-900">
+        <div class="flex flex-col place-content-center pl-8 h-56 text-trueGrey-600 rounded-md">
+          <h2 class="lg:text-2xl font-semibold text-center mb-6 mr-2 text-trueGrey-800">Contact Us!</h2>
+          <div class="grid grid-cols-2 grid-rows-3 gap-2">
+            <p class="col-start-1"><i class="fas fa-phone-alt lg:text-xl mr-2"></i><a class="hover:text-green-500"
+                href="tel:01270626997">01270
+                626997</a></p>
+            <p class="col-start-1"><i class="far fa-envelope lg:text-xl mr-2"></i><a class="hover:text-green-500"
+                href="mailto:mark@onemorebicycle.co.uk">
+                mark@onemorebicycle.co.uk</a></p>
+            <div class="md:flex md:space-x-8 md:text-2xl col-start-1">
+              <a href="https://facebook.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+                class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500"
+                alt="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+                class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500"
+                alt="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
+                class="transition transform duration-300 ease hover:-translate-y-1 hover:text-green-500"
+                alt="twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <i class="fas fa-map-marker-alt mr-2 col-start-2 row-start-1 mt-1 ml-12"></i>
+            <p class="col-start-2 row-start-1 row-span-2 w-44 place-self-end">The
+              Studio,
+              Gate Farm
+              Enterprise Park,
+              Wettenhall
+              Road, Poole,
+              Nantwich,
+              CW5 6AL</p>
           </div>
         </div>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true" class="grid">
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true" class="grid mb-6">
           <div class="mb-2 mr-6">
             <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">First name</label>
             <input type="text" name="name"
               class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text">
+              type="text" required>
           </div>
           <div class="mb-2 col-start-2 col-end-3">
             <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Last name</label>
             <input type="text" name="name"
               class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text">
+              type="text" required>
           </div>
           <div class="mb-2 mr-6">
             <label for="email" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Email</label>
             <input type="email" name="email"
               class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text">
+              type="text" required>
           </div>
-          <div class="mb-2">
+          <div class="mb-2 relative">
             <label for="phone" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Phone</label>
+            <p class="inline text-xs text-trueGrey-500 absolute right-0 top-2 mr-1">Optional</p>
             <input type="tel" name="phone" pattern="^[0-9-+\s()]*$"
-              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline" optional>
+              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline">
           </div>
           <div class="mb-8 col-span-2">
             <label for="message" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Message</label>
             <textarea name="message"
-              class="w-full h-32 bg-gray-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+              class="w-full h-32 bg-gray-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              required></textarea>
           </div>
           <div data-netlify-recaptcha="true"></div>
           <button type="submit"
-            class="uppercase text-sm font-bold tracking-wide bg-green-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            class="col-span-2 uppercase text-sm font-bold tracking-wide bg-green-500 text-gray-100 p-3 mx-auto w-1/2 rounded-lg  lg:hover:bg-green-600 transition duration-300 ease focus:outline-none focus:ring focus:ring-offset-2 ring-green-500">
             Send Message
           </button>
         </form>
+        <div class="w-full">
+          <div class="w-64 mx-auto flex flex-col justify-center">
+            <p class="text-center text-xl font-semibold mb-1">Opening Hours</p>
+            <div class="ml-8">
+              <p><strong>Monday</strong>: 10am - 5.30pm</p>
+              <p><strong>Tuesday</strong>: 10am - 5.30pm</p>
+              <p><strong>Wednesday</strong>: 10am - 5.30pm</p>
+              <p><strong>Thursday</strong>: 10am - 5.30pm</p>
+              <p><strong>Friday</strong>: 10am - 5.30pm</p>
+              <p><strong>Saturday</strong>: 9.30am - 5.30pm</p>
+              <p><strong>Sunday</strong>: Closed
+            </div>
+          </div>
+        </div>
+        <div id="map" class="w-full h-80"></div>
       </div>
     </div>
     </div>
@@ -155,7 +184,8 @@
     <p>All rights reserved.</p>
   </section>
   <!-- End Footer -->
-
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsmXnd17YMMoSdSh0EjdKbLsZ1nHeh8RM&callback=initMap"></script>
   <script src="./main.js"></script>
 </body>
 
