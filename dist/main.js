@@ -10,11 +10,28 @@ btnClose.addEventListener("click", () => {
   mobileMenu.classList.toggle("translate-x-full");
 });
 
-let map;
-
+// Initialize and add the map
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  const poole = { lat: 53.104209531446934, lng: -2.5478443738506287 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: poole,
+  });
+  const marker = new google.maps.Marker({
+    position: poole,
+    map: map,
+    icon: "https://img.icons8.com/fluent/50/000000/google-maps-new.png",
+  });
+
+  const detailWindow = new google.maps.InfoWindow({
+    content: "<h2>We're here!</h2>",
+  });
+
+  map.addListener("mouseover", () => {
+    detailWindow.open(map, marker);
+  });
+
+  map.addListener("mouseout", () => {
+    detailWindow.close(map, marker);
   });
 }
