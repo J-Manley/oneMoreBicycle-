@@ -78,11 +78,11 @@
   </div>
   <!-- End Mobile Navbar -->
   <section class="flex flex-col justify-center lg:justify-evenly items-center">
-    <div class="flex flex-col items-center pt-44 md:pt-60 lg:pt-36 lg:mb-48 min-h-screen lg:min-h-full">
-      <h1 class="font-semibold text-3xl md:text-4xl lg:text-6xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch</h1>
-      <div class="block h-0.5 w-12 lg:w-24 mx-auto bg-green-500 mb-6 lg:mb-12"></div>
+    <div class="flex flex-col items-center pt-44 md:pt-36 mb-48 md:mb-56 lg:mb-48">
+      <h1 class="font-semibold text-4xl md:text-5xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch</h1>
+      <div class="block h-0.5 w-12 md:w-16 lg:w-24 mx-auto bg-green-500 mb-6 md:mb-8 lg:mb-12"></div>
       <p
-        class="text-trueGrey-900 max-w-xs md:max-w-md lg:max-w-2xl text-lg md:text-xl lg:text-2xl ml-4 md:ml-8 lg:ml-16">
+        class="text-trueGrey-900 max-w-xs md:max-w-md lg:max-w-2xl text-lg md:text-xl lg:text-2xl ml-2 md:ml-8 lg:ml-16">
         Got a
         bike-related
         question? Need to book your bike in for a service? Looking to buy a new bike (n+1!)? Feel free to send us a
@@ -93,18 +93,19 @@
           class="w-full h-full object-cover">
       </div>
       <div
-        class="lg:flex-shrink-0 flex flex-col lg:grid grid-cols-1 gap-8 auto-rows-min w-full lg:w-auto px-10 lg:px-32 py-16 lg:py-20 bg-trueGrey-200 text-trueGrey-900">
-        <div class="flex flex-col place-content-center pl-8 h-56 text-trueGrey-600 rounded-md">
-          <h2 class="text-xl lg:text-2xl font-semibold text-center mb-6 mr-8 lg:mr-2 text-trueGrey-800">Contact Us!</h2>
-          <div class="flex flex-col lg:grid grid-cols-2 grid-rows-3 gap-2">
-            <p class="col-start-1"><i class="fas fa-phone-alt lg:text-xl text-green-500 mr-2"></i><a
+        class="lg:flex-shrink-0 flex flex-col lg:grid grid-cols-1 md:gap-2 lg:gap-8 auto-rows-min w-full lg:w-auto px-10 lg:px-32 pt-20 md:pt-12 pb-16 lg:py-20 bg-trueGrey-200 text-trueGrey-900">
+        <div class="flex flex-col place-content-center lg:pl-8 h-56 mb-8 md:mb-0 text-trueGrey-600 lg:rounded-md">
+          <h2 class="text-xl lg:text-2xl font-semibold text-center mb-6 lg:mr-2 text-trueGrey-800">Contact Us!</h2>
+          <div class="flex flex-col space-y-3 md:space-y-0 pl-1 md:pl-0 md:grid grid-cols-2 grid-rows-3 gap-2">
+            <p class="col-start-1 md:ml-20 lg:ml-0"><i class="fas fa-phone-alt lg:text-xl text-green-500 mr-2"></i><a
                 class="transition transform duration-300 ease lg:hover:text-green-500" href="tel:01270626997">01270
                 626997</a></p>
-            <p class="col-start-1"><i class="fas fa-envelope lg:text-xl text-green-500 mr-2"></i><a
+            <p class="col-start-1 md:ml-20 lg:ml-0"><i
+                class="fas fa-envelope lg:text-xl text-green-500 mr-1 lg:mr-2"></i><a
                 class="transition transform duration-300 ease lg:hover:text-green-500"
                 href="mailto:mark@onemorebicycle.co.uk">
                 mark@onemorebicycle.co.uk</a></p>
-            <div class="flex space-x-8 text-2xl order-4 col-start-1">
+            <div class="flex space-x-8 text-2xl order-4 col-start-1 md:ml-20 lg:ml-0">
               <a href="https://facebook.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
                 class="transition transform duration-300 ease lg:hover:-translate-y-1 lg:hover:text-green-500"
                 alt="facebook"><i class="fab fa-facebook"></i></a>
@@ -115,52 +116,53 @@
                 class="transition transform duration-300 ease lg:hover:-translate-y-1 lg:hover:text-green-500"
                 alt="twitter"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="col-start-2 row-start-1 row-span-2 w-44 place-self-end"><i
-                class="fas fa-map-marker-alt lg:text-xl mr-1 text-green-500"></i>The
+            <p class="col-start-2 row-start-1 row-span-2 w-48 md:place-self-center lg:place-self-end md:ml-4 lg:ml-0">
+              <i class="fas fa-map-marker-alt lg:text-xl mr-1 text-green-500"></i>The
               Studio,
               Gate Farm
               Enterprise Park,
               Wettenhall
               Road, Poole,
               Nantwich,
-              CW5 6AL</p>
+              CW5 6AL
+            </p>
           </div>
         </div>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true"
-          class="flex flex-col lg:grid mb-5 lg:mb-7">
-          <div class="mb-2 mr-6">
+          class="flex flex-col md:grid mb-12 lg:mb-7">
+          <div class="mb-2 md:mr-6">
             <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">First name</label>
             <input type="text" name="name"
-              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              class="w-full bg-trueGrey-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text" required>
           </div>
           <div class="mb-2 col-start-2 col-end-3">
             <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Last name</label>
             <input type="text" name="name"
-              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              class="w-full bg-trueGrey-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text" required>
           </div>
-          <div class="mb-2 mr-6">
+          <div class="mb-2 md:mr-6">
             <label for="email" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Email</label>
             <input type="email" name="email"
-              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              class="w-full bg-trueGrey-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text" required>
           </div>
           <div class="mb-2 relative">
             <label for="phone" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Phone</label>
-            <p class="inline text-xs text-trueGrey-500 absolute right-0 top-2 mr-1">Optional</p>
+            <p class="inline text-xs text-trueGrey-500 absolute right-0 top-2 mr-2">Optional</p>
             <input type="tel" name="phone" pattern="^[0-9-+\s()]*$"
-              class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline">
+              class="w-full bg-trueGrey-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline">
           </div>
           <div class="mb-8 col-span-2">
             <label for="message" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Message</label>
             <textarea name="message"
-              class="w-full h-32 bg-gray-300 text-sm text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              class="w-full h-32 bg-trueGrey-300 text-sm text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               placeholder="Send us a message!" required></textarea>
           </div>
-          <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha="true" class="mb-2"></div>
           <button type="submit"
-            class="col-span-2 uppercase text-sm font-bold tracking-wide bg-green-500 text-gray-100 p-3 mx-auto w-1/2 rounded-lg  lg:hover:bg-green-600 transition duration-300 ease focus:outline-none focus:ring focus:ring-offset-2 ring-green-500">
+            class="col-span-2 uppercase text-sm font-bold tracking-wide bg-green-500 text-trueGrey-50 p-3 mx-auto w-1/2 rounded-lg  lg:hover:bg-green-600 transition duration-300 ease focus:outline-none focus:ring focus:ring-offset-2 ring-green-500">
             Send Message
           </button>
         </form>
