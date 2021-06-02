@@ -8,11 +8,12 @@
   <title>One More Bicycle - Bicycle Shop in Nantwich</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./main.css">
-  <script src="https://kit.fontawesome.com/8075c25845.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-trueGrey-300 text-gray-100">
+<body class=" debug-screens relative bg-trueGrey-300 font-notoSansJP text-gray-100">
   <!-- Navbar -->
   <nav class="bg-trueGrey-900 text-trueGrey-50 px-10 py-3 sticky top-0 z-50 hidden lg:block">
     <div class="hidden lg:flex flex-wrap justify-between items-center">
@@ -51,7 +52,7 @@
   <nav class="bg-trueGrey-900 text-trueGrey-50 px-5 py-2 sticky top-0 z-50 lg:hidden">
     <div class="flex justify-between items-center">
       <div>
-        <a>
+        <a href="./index.html">
           <img src="./img/logo-company.webp" alt="One More Bicycle Company Logo" class="w-16">
         </a>
       </div>
@@ -77,42 +78,45 @@
   </div>
   <!-- End Mobile Navbar -->
   <section class="flex flex-col justify-center lg:justify-evenly items-center">
-    <div class="flex flex-col items-center pt-44 md:pt-60 lg:pt-36 mb-48">
-      <h1 class="font-semibold text-2xl md:text-4xl lg:text-5xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch</h1>
+    <div class="flex flex-col items-center pt-44 md:pt-60 lg:pt-36 lg:mb-48 min-h-screen lg:min-h-full">
+      <h1 class="font-semibold text-3xl md:text-4xl lg:text-6xl text-trueGrey-900 mb-2 lg:mb-3">Get In Touch</h1>
       <div class="block h-0.5 w-12 lg:w-24 mx-auto bg-green-500 mb-6 lg:mb-12"></div>
-      <p class="text-trueGrey-900 max-w-xs md:max-w-md lg:max-w-2xl md:text-xl ml-4 md:ml-8 lg:ml-12">Lorem ipsum dolor,
-        sit amet consectetur adipisicing elit. Corporis possimus sequi praesentium eaque, atque qui laudantium
-        necessitatibus dignissimos iusto quidem.</p>
+      <p
+        class="text-trueGrey-900 max-w-xs md:max-w-md lg:max-w-2xl text-lg md:text-xl lg:text-2xl ml-4 md:ml-8 lg:ml-16">
+        Got a
+        bike-related
+        question? Need to book your bike in for a service? Looking to buy a new bike (n+1!)? Feel free to send us a
+        message, give us a call or pop in to the shop.</p>
     </div>
-    <div class="flex">
-      <div class="lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front" loading="lazy"
-          class="w-full h-full object-contain">
+    <div class="flex w-full lg:w-auto">
+      <div class="hidden lg:block lg:order-2"><img src="./img/shop.webp" alt="Image of One More Bicycle shop front"
+          class="w-full h-full object-cover">
       </div>
       <div
-        class="px-8 grid gap-8 auto-rows-min grid-cols-1 md:px-12 lg:px-32 pt-20 pb-24 bg-trueGrey-200 text-trueGrey-900">
+        class="lg:flex-shrink-0 flex flex-col lg:grid grid-cols-1 gap-8 auto-rows-min w-full lg:w-auto px-10 lg:px-32 py-16 lg:py-20 bg-trueGrey-200 text-trueGrey-900">
         <div class="flex flex-col place-content-center pl-8 h-56 text-trueGrey-600 rounded-md">
-          <h2 class="lg:text-2xl font-semibold text-center mb-6 mr-2 text-trueGrey-800">Contact Us!</h2>
-          <div class="grid grid-cols-2 grid-rows-3 gap-2">
+          <h2 class="text-xl lg:text-2xl font-semibold text-center mb-6 mr-8 lg:mr-2 text-trueGrey-800">Contact Us!</h2>
+          <div class="flex flex-col lg:grid grid-cols-2 grid-rows-3 gap-2">
             <p class="col-start-1"><i class="fas fa-phone-alt lg:text-xl text-green-500 mr-2"></i><a
                 class="transition transform duration-300 ease lg:hover:text-green-500" href="tel:01270626997">01270
                 626997</a></p>
-            <p class="col-start-1"><i class="far fa-envelope lg:text-xl text-green-500 mr-2"></i><a
+            <p class="col-start-1"><i class="fas fa-envelope lg:text-xl text-green-500 mr-2"></i><a
                 class="transition transform duration-300 ease lg:hover:text-green-500"
                 href="mailto:mark@onemorebicycle.co.uk">
                 mark@onemorebicycle.co.uk</a></p>
-            <div class="md:flex md:space-x-8 md:text-2xl col-start-1">
+            <div class="flex space-x-8 text-2xl order-4 col-start-1">
               <a href="https://facebook.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-                class="transition transform duration-300 ease hover:-translate-y-1 lg:hover:text-green-500"
+                class="transition transform duration-300 ease lg:hover:-translate-y-1 lg:hover:text-green-500"
                 alt="facebook"><i class="fab fa-facebook"></i></a>
               <a href="https://www.instagram.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-                class="transition transform duration-300 ease hover:-translate-y-1 lg:hover:text-green-500"
+                class="transition transform duration-300 ease lg:hover:-translate-y-1 lg:hover:text-green-500"
                 alt="instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://twitter.com/onemorebicycle/" target="_blank" rel="noopener noreferrer"
-                class="transition transform duration-300 ease hover:-translate-y-1 lg:hover:text-green-500"
+                class="transition transform duration-300 ease lg:hover:-translate-y-1 lg:hover:text-green-500"
                 alt="twitter"><i class="fab fa-twitter"></i></a>
             </div>
-            <i class="fas fa-map-marker-alt mr-2 col-start-2 row-start-1 mt-1 ml-12 text-green-500"></i>
-            <p class="col-start-2 row-start-1 row-span-2 w-44 place-self-end">The
+            <p class="col-start-2 row-start-1 row-span-2 w-44 place-self-end"><i
+                class="fas fa-map-marker-alt lg:text-xl mr-1 text-green-500"></i>The
               Studio,
               Gate Farm
               Enterprise Park,
@@ -122,7 +126,8 @@
               CW5 6AL</p>
           </div>
         </div>
-        <form method="POST" data-netlify="true" data-netlify-recaptcha="true" class="grid mb-7">
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true"
+          class="flex flex-col lg:grid mb-5 lg:mb-7">
           <div class="mb-2 mr-6">
             <label for="name" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">First name</label>
             <input type="text" name="name"
@@ -150,8 +155,8 @@
           <div class="mb-8 col-span-2">
             <label for="message" class="inline-block text-sm text-trueGrey-600 font-bold mb-2">Message</label>
             <textarea name="message"
-              class="w-full h-32 bg-gray-300 text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              required></textarea>
+              class="w-full h-32 bg-gray-300 text-sm text-trueGrey-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              placeholder="Send us a message!" required></textarea>
           </div>
           <div data-netlify-recaptcha="true"></div>
           <button type="submit"
@@ -159,7 +164,7 @@
             Send Message
           </button>
         </form>
-        <div class="w-full mb-7">
+        <div class="w-full lg:mb-7">
           <div class="w-64 mx-auto flex flex-col justify-center">
             <p class="text-center text-xl font-semibold mb-1">Opening Hours</p>
             <div class="ml-8">
@@ -173,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div id="map" class="w-full h-80 rounded-md">
+        <div id="map" class="hidden lg:block w-full h-80 rounded-md">
         </div>
       </div>
     </div>

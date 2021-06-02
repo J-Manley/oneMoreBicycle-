@@ -22,16 +22,4 @@ function initMap() {
     map: map,
     icon: "https://img.icons8.com/fluent/50/000000/google-maps-new.png",
   });
-
-  const detailWindow = new google.maps.InfoWindow({
-    content: "<h2>We're here!</h2>",
-  });
-
-  map.addListener("mouseover", () => {
-    detailWindow.open(map, marker);
-  });
-
-  map.addListener("mouseout", () => {
-    detailWindow.close(map, marker);
-  });
 }
