@@ -1,3 +1,6 @@
+var cloudinary = require("cloudinary-core");
+var cl = new cloudinary.Cloudinary({ cloud_name: "jm1", secure: true });
+
 const btn = document.querySelector(".mobile-menu-btn");
 const btnClose = document.querySelector(".mobile-menu-close");
 const mobileMenu = document.querySelector(".mobile-menu");
