@@ -583,7 +583,7 @@ video {
 }
 
 .bg-hero-image-home {
-  background-image: url('./img/hero-image-home.jpg');
+  background-image: url('https://d9pz4ga22rwr5.cloudfront.net/img/hero-image-home.jpg');
 }
 
 .bg-opacity-10 {
