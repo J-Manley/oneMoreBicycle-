@@ -1,3 +1,22 @@
+// const navBar = document.querySelector("#navBar");
+// const hero = document.querySelector(".hero__content");
+
+// const navOptions = {
+//   rootMargin: "-651px 0px 0px 0px",
+// };
+
+// const navObserver = new IntersectionObserver((entries, navObserver) => {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       navBar.classList.add("navBar--scrolled");
+//     } else {
+//       navBar.classList.remove("navBar--scrolled");
+//     }
+//   });
+// }, navOptions);
+
+// navObserver.observe(hero);
+
 const btn = document.querySelector(".mobile-menu-btn");
 const btnClose = document.querySelector(".mobile-menu-close");
 const mobileMenu = document.querySelector(".mobile-menu");

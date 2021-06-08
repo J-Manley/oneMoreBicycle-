@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer components {
+  .navBar--scrolled {
+    @apply opacity-95 shadow-2xl;
+  }
+} */

@@ -1325,6 +1325,12 @@ video {
   }
 }
 
+/* @layer components {
+  .navBar--scrolled {
+    @apply opacity-95 shadow-2xl;
+  }
+} */
+
 @media (min-width: 640px) {
 }
 
