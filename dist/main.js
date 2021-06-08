@@ -1,5 +1,3 @@
-import "alpinejs";
-
 const btn = document.querySelector(".mobile-menu-btn");
 const btnClose = document.querySelector(".mobile-menu-close");
 const mobileMenu = document.querySelector(".mobile-menu");
