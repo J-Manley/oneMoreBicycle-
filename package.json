@@ -7,16 +7,23 @@
     "dev": "postcss ./src/main.css -o ./dist/main.css",
     "prod": "NODE_ENV=production postcss ./src/main.css -o ./dist/main.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Manley/oneMoreBicycle-.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Manley/oneMoreBicycle-/issues"
+  },
+  "homepage": "https://github.com/J-Manley/oneMoreBicycle-#readme",
   "dependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.4"
   },
   "devDependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1",
     "tailwindcss-debug-screens": "^2.0.0"
   }
 }
