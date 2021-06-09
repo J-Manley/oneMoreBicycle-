@@ -24,6 +24,6 @@
     "tailwindcss": "^2.0.4"
   },
   "devDependencies": {
-    "tailwindcss-debug-screens": "^2.0.0"
+    "tailwindcss-debug-screens": "github:jorenvanhee/tailwindcss-debug-screens"
   }
 }

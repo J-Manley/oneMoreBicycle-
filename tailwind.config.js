@@ -30,9 +30,11 @@ module.exports = {
         pink: colors.pink,
         rose: colors.rose,
       },
+
       fontFamily: {
         notoSansJP: ["'Noto Sans JP'", "helvetica", "sans-serif"],
       },
+
       backgroundImage: (theme) => ({
         "hero-image-home":
           "url('https://d1yt94yd1gs7u3.cloudfront.net/img/hero-image-home.jpg')",
