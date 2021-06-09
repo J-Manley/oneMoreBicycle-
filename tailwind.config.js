@@ -35,7 +35,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "hero-image-home":
-          "url('https://d9pz4ga22rwr5.cloudfront.net/img/hero-image-home.jpg')",
+          "url('https://d1yt94yd1gs7u3.cloudfront.net/img/hero-image-home.jpg')",
       }),
     },
   },
