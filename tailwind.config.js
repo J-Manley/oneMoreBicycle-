@@ -33,10 +33,28 @@ module.exports = {
 
       keyframes: {
         fade: { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
+        slideInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-5%)" },
+
+          "100%": { opacity: "1", transform: "translateX(0%)" },
+        },
+        slideInRight: {
+          "0%": { opacity: "0", transform: "translateX(5%)" },
+
+          "100%": { opacity: "1", transform: "translateX(0%)" },
+        },
+        slideInBtm: {
+          "0%": { opacity: "0", transform: "translateY(5%)" },
+
+          "100%": { opacity: "1", transform: "translateY(0%)" },
+        },
       },
 
       animation: {
         fade: "fade 500ms ease-in 200ms",
+        slideInLeft: "slideInLeft 350ms ease-in",
+        slideInRight: "slideInRight 350ms ease-in",
+        slideInBtm: "slideInBtm 200ms ease-in",
       },
 
       fontFamily: {

@@ -1359,9 +1359,86 @@ video {
   }
 }
 
+@-webkit-keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideInBtm {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideInBtm {
+  0% {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 .animate-fade {
   -webkit-animation: fade 500ms ease-in 200ms;
           animation: fade 500ms ease-in 200ms;
+}
+
+.animate-slideInBtm {
+  -webkit-animation: slideInBtm 200ms ease-in;
+          animation: slideInBtm 200ms ease-in;
 }
 
 .fade__in {
@@ -1963,6 +2040,16 @@ video {
 
   .lg\:hover\:-translate-y-1:hover {
     --tw-translate-y: -0.25rem;
+  }
+
+  .lg\:animate-slideInLeft {
+    -webkit-animation: slideInLeft 350ms ease-in;
+            animation: slideInLeft 350ms ease-in;
+  }
+
+  .lg\:animate-slideInRight {
+    -webkit-animation: slideInRight 350ms ease-in;
+            animation: slideInRight 350ms ease-in;
   }
 }
 
