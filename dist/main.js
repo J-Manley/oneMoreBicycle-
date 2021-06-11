@@ -1,3 +1,15 @@
+const btn = document.querySelector(".mobile-menu-btn");
+const btnClose = document.querySelector(".mobile-menu-close");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+btn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("translate-x-full");
+});
+
+btnClose.addEventListener("click", () => {
+  mobileMenu.classList.toggle("translate-x-full");
+});
+
 const navBar = document.querySelector("#navBar");
 const hero = document.querySelector(".hero__content");
 
@@ -17,19 +29,52 @@ const navObserver = new IntersectionObserver((entries, navObserver) => {
 
 navObserver.observe(hero);
 
-const btn = document.querySelector(".mobile-menu-btn");
-const btnClose = document.querySelector(".mobile-menu-close");
-const mobileMenu = document.querySelector(".mobile-menu");
+// Fade In
 
-btn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("translate-x-full");
+const faders = document.querySelectorAll(".fade__in");
+
+const fadeInOptions = {
+  rootMargin: "0px 0px -150px 0px",
+};
+
+const fadeInScroll = new IntersectionObserver((entries, fadeInScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("f-appear");
+      fadeInScroll.unobserve(entry.target);
+    }
+  });
+}, fadeInOptions);
+
+faders.forEach((fader) => {
+  fadeInScroll.observe(fader);
+  console.log(fader);
 });
 
-btnClose.addEventListener("click", () => {
-  mobileMenu.classList.toggle("translate-x-full");
-});
+// Slides
 
-// About Images
+const sliders = document.querySelectorAll(".slide__in");
+
+const slideInOptions = {
+  rootMargin: "0px 0px -150px 0px",
+};
+
+const slideInScroll = new IntersectionObserver((entries, slideInScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("sl-appear");
+      slideInScroll.unobserve(entry.target);
+    }
+  });
+}, slideInOptions);
+
+sliders.forEach((slide) => {
+  slideInScroll.observe(slide);
+});
 
 const slideInLeft = document.querySelectorAll(".slide__in--left");
 
@@ -71,29 +116,6 @@ const slideInRightScroll = new IntersectionObserver((entries, slideInRightScroll
 
 slideInRight.forEach((slide) => {
   slideInRightScroll.observe(slide);
-});
-
-// Testimonial Cards
-
-const dropIn = document.querySelectorAll(".drop__in");
-
-const dropInOptions = {
-  rootMargin: "0px 0px -300px 0px",
-};
-
-const dropInScroll = new IntersectionObserver((entries, dropInScroll) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("drop-appear");
-      dropInScroll.unobserve(entry.target);
-    }
-  });
-}, dropInOptions);
-
-dropIn.forEach((drop) => {
-  dropInScroll.observe(drop);
 });
 
 // Initialize and add the map

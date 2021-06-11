@@ -31,6 +31,14 @@ module.exports = {
         rose: colors.rose,
       },
 
+      keyframes: {
+        fade: { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
+      },
+
+      animation: {
+        fade: "fade 500ms ease-in 200ms",
+      },
+
       fontFamily: {
         notoSansJP: ["'Noto Sans JP'", "helvetica", "sans-serif"],
       },

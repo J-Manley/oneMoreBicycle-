@@ -6,4 +6,19 @@
   .navBar--scrolled {
     @apply shadow-lg;
   }
+
+  .fade__in {
+    @apply opacity-0 transition transform duration-200 ease-in;
+  }
+
+  .f-appear {
+    @apply opacity-100;
+  }
+
+  .slide__in {
+    @apply opacity-0 transition transform translate-y-4 duration-200 ease-in;
+  }
+  .sl-appear {
+    @apply opacity-100 translate-y-0;
+  }
 }
