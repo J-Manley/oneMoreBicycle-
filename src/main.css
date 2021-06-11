@@ -2,35 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .fade__in {
-    @apply opacity-0 transition transform duration-200 ease-in;
-  }
+.fade__in {
+  @apply opacity-0 transition transform duration-200 ease-in;
+}
 
-  .f-appear {
-    @apply opacity-100;
-  }
+.f-appear {
+  @apply opacity-100;
+}
 
-  .slide__in {
-    @apply opacity-0 transition transform translate-y-4 duration-200 ease-in;
-  }
-  .sl-appear {
-    @apply opacity-100 translate-y-0;
-  }
+.slide__in {
+  @apply opacity-0 transition transform translate-y-4 duration-200 ease-in;
+}
+.sl-appear {
+  @apply opacity-100 translate-y-0;
+}
 
-  .slide__in--left {
-    @apply opacity-0 transition transform -translate-x-4 duration-200 ease-in;
-  }
+.slide__in--left {
+  @apply opacity-0 transition transform -translate-x-4 duration-200 ease-in;
+}
 
-  .left-appear {
-    @apply opacity-100 translate-x-0;
-  }
+.left-appear {
+  @apply opacity-100 translate-x-0;
+}
 
-  .slide__in--right {
-    @apply opacity-0 transition transform translate-x-4 duration-200 ease-in;
-  }
+.slide__in--right {
+  @apply opacity-0 transition transform translate-x-4 duration-200 ease-in;
+}
 
-  .right-appear {
-    @apply opacity-100 translate-x-0;
-  }
+.right-appear {
+  @apply opacity-100 translate-x-0;
 }
