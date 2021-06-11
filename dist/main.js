@@ -10,25 +10,6 @@ btnClose.addEventListener("click", () => {
   mobileMenu.classList.toggle("translate-x-full");
 });
 
-const navBar = document.querySelector("#navBar");
-const hero = document.querySelector(".hero__content");
-
-const navOptions = {
-  rootMargin: "-707px 0px 0px 0px",
-};
-
-const navObserver = new IntersectionObserver((entries, navObserver) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      navBar.classList.add("navBar--scrolled");
-    } else {
-      navBar.classList.remove("navBar--scrolled");
-    }
-  });
-}, navOptions);
-
-navObserver.observe(hero);
-
 // Fade In
 
 const faders = document.querySelectorAll(".fade__in");
@@ -50,7 +31,6 @@ const fadeInScroll = new IntersectionObserver((entries, fadeInScroll) => {
 
 faders.forEach((fader) => {
   fadeInScroll.observe(fader);
-  console.log(fader);
 });
 
 // Slides
