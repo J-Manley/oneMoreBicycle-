@@ -51,10 +51,10 @@ module.exports = {
       },
 
       animation: {
-        fade: "fade 500ms ease-in 200ms",
-        slideInLeft: "slideInLeft 350ms ease-in",
-        slideInRight: "slideInRight 350ms ease-in",
-        slideInBtm: "slideInBtm 200ms ease-in",
+        fade: "fade 500ms ease-in-out 200ms",
+        slideInLeft: "slideInLeft 350ms ease-in-out",
+        slideInRight: "slideInRight 350ms ease-in-out",
+        slideInBtm: "slideInBtm 200ms ease-in-out",
       },
 
       fontFamily: {
