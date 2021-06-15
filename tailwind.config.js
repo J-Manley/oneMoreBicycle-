@@ -51,7 +51,7 @@ module.exports = {
       },
 
       animation: {
-        fade: "fade 500ms ease-in-out 200ms",
+        fade: "fade 500ms ease-in-out",
         slideInLeft: "slideInLeft 350ms ease-in-out",
         slideInRight: "slideInRight 350ms ease-in-out",
         slideInBtm: "slideInBtm 200ms ease-in-out",

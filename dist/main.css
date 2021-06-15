@@ -1445,8 +1445,8 @@ video {
 }
 
 .animate-fade {
-  -webkit-animation: fade 500ms ease-in-out 200ms;
-          animation: fade 500ms ease-in-out 200ms;
+  -webkit-animation: fade 500ms ease-in-out;
+          animation: fade 500ms ease-in-out;
 }
 
 .animate-slideInBtm {
